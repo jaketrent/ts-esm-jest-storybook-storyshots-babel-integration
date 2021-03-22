@@ -8,6 +8,7 @@
 - Jest - testing
 - React - ui component library
 - Storybook - visual component development
+- Storyshots - DOM regression snapshots
 
 ## Features
 
