@@ -1,24 +1,25 @@
 {
-  "name": "ts-jest-storyshots",
+  "name": "ts-esm-jest-storybook-storyshots-babel-integration",
   "version": "1.0.0",
-  "description": "",
+  "description": "proof of concept integration for typescript, esm and testing libraries",
   "main": "dist/Button.mjs",
   "module": "dist/Button.mjs",
   "type": "module",
   "sideEffects": false,
+  "private": true,
   "scripts": {
     "build": "tsc && tsc-esm --project tsconfig.json",
     "test": "jest",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "jaketrent",
+  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.13.10",
     "@babel/preset-env": "^7.13.12",
     "@babel/preset-react": "^7.12.13",
+    "@babel/preset-typescript": "^7.13.0",
     "@storybook/addon-actions": "^6.1.21",
     "@storybook/addon-essentials": "^6.1.21",
     "@storybook/addon-links": "^6.1.21",
@@ -31,7 +32,6 @@
     "typescript-esm": "^2.0.0"
   },
   "dependencies": {
-    "@babel/preset-typescript": "^7.13.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   }
