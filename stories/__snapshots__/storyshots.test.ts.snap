@@ -1,0 +1,96 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Example/Button Large 1`] = `
+<button
+  style={
+    Object {
+      "backgroundColor": "transparent",
+      "border": 0,
+      "borderRadius": "3em",
+      "boxShadow": "rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset",
+      "color": "#333",
+      "cursor": "pointer",
+      "display": "inline-block",
+      "fontFamily": "'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
+      "fontSize": "16px",
+      "fontWeight": 700,
+      "lineHeight": 1,
+      "padding": "12px 24px",
+    }
+  }
+  type="button"
+>
+  Button
+</button>
+`;
+
+exports[`Storyshots Example/Button Primary 1`] = `
+<button
+  style={
+    Object {
+      "backgroundColor": "#1ea7fd",
+      "border": 0,
+      "borderRadius": "3em",
+      "color": "white",
+      "cursor": "pointer",
+      "display": "inline-block",
+      "fontFamily": "'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
+      "fontSize": "14px",
+      "fontWeight": 700,
+      "lineHeight": 1,
+      "padding": "11px 20px",
+    }
+  }
+  type="button"
+>
+  Button
+</button>
+`;
+
+exports[`Storyshots Example/Button Secondary 1`] = `
+<button
+  style={
+    Object {
+      "backgroundColor": "transparent",
+      "border": 0,
+      "borderRadius": "3em",
+      "boxShadow": "rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset",
+      "color": "#333",
+      "cursor": "pointer",
+      "display": "inline-block",
+      "fontFamily": "'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
+      "fontSize": "14px",
+      "fontWeight": 700,
+      "lineHeight": 1,
+      "padding": "11px 20px",
+    }
+  }
+  type="button"
+>
+  Button
+</button>
+`;
+
+exports[`Storyshots Example/Button Small 1`] = `
+<button
+  style={
+    Object {
+      "backgroundColor": "transparent",
+      "border": 0,
+      "borderRadius": "3em",
+      "boxShadow": "rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset",
+      "color": "#333",
+      "cursor": "pointer",
+      "display": "inline-block",
+      "fontFamily": "'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
+      "fontSize": "12px",
+      "fontWeight": 700,
+      "lineHeight": 1,
+      "padding": "10px 16px",
+    }
+  }
+  type="button"
+>
+  Button
+</button>
+`;
