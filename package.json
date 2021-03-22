@@ -2,8 +2,12 @@
   "name": "ts-jest-storyshots",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/Button.mjs",
+  "module": "dist/Button.mjs",
+  "type": "module",
+  "sideEffects": false,
   "scripts": {
+    "build": "tsc && tsc-esm --project tsconfig.json",
     "test": "jest",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
@@ -23,7 +27,8 @@
     "@testing-library/react": "^11.2.5",
     "babel-jest": "^26.6.3",
     "babel-loader": "^8.2.2",
-    "jest": "^26.6.3"
+    "jest": "^26.6.3",
+    "typescript-esm": "^2.0.0"
   },
   "dependencies": {
     "@babel/preset-typescript": "^7.13.0",
