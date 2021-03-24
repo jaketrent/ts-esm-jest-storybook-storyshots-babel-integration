@@ -1,6 +1,6 @@
 import { canUseDOM } from 'exenv'
 import { MutableRefObject, RefObject, useEffect, useState } from 'react'
-import ResizeObserver from 'resize-observer-polyfill'
+// import ResizeObserver from 'resize-observer-polyfill'
 
 import { combineFns } from './combine-fns'
 import { debounce } from './debounce'
@@ -18,7 +18,7 @@ export function useResizeObserver(
 
     let subscribed = true
 
-    const handleResize = combineFns(entries => {
+    const handleResize = combineFns((entries) => {
       if (!subscribed) return
 
       const { contentRect } = entries[0]

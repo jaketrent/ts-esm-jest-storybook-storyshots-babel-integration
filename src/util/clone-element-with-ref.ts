@@ -3,7 +3,7 @@ import {
   HTMLAttributes,
   ReactHTMLElement,
   MutableRefObject,
-  cloneElement
+  cloneElement,
 } from 'react'
 
 import { isCallbackRef, isRef } from './is-ref'
@@ -18,12 +18,13 @@ export const cloneElementWithRef = <
 ) => {
   const { ref: innerRef } = el
 
-  const combine: RefCallback<T> = node => {
+  const combine: RefCallback<T> = (node) => {
     if (!node) return
 
     if (isRef<T>(outerRef)) outerRef.current = node
 
     if (isCallbackRef<T>(innerRef)) innerRef(node)
+    // @ts-ignore: works in DS
     else if (isRef<T>(innerRef)) innerRef.current = node
   }
 

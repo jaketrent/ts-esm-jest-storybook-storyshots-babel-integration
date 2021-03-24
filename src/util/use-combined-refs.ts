@@ -13,12 +13,13 @@ export const useCombinedRefs = <El extends HTMLElement>(
   const targetRef = useRef<El>(null)
 
   useEffect(() => {
-    refs.forEach(ref => {
+    refs.forEach((ref) => {
       if (!ref) return
 
       if (isCallbackRef<El>(ref)) {
         ref(targetRef.current)
       } else if (isRef<El>(ref) && targetRef.current) {
+        // @ts-ignore: works in DS
         ref.current = targetRef.current
       }
     })

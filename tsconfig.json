@@ -4,6 +4,8 @@
     "module": "esnext",
     "target": "es5",
     "outDir": "./dist",
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "downlevelIteration": true
   }
 }

@@ -1,6 +1,6 @@
 import { fireEvent, render } from '@testing-library/react'
 
-import { basic } from '../__stories__/index.story'
+import { basic } from '../__stories__/index.stories'
 
 describe('useMenuKeyEvents()', () => {
   beforeAll(() => {
@@ -10,10 +10,10 @@ describe('useMenuKeyEvents()', () => {
           'script,style'
         )
 
-        nodes.forEach(el => el.remove())
+        nodes.forEach((el) => el.remove())
 
         return this.textContent
-      }
+      },
     })
   })
 
